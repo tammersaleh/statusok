@@ -177,3 +177,7 @@ asdf global java 8.161
 asdf_plugin_update "maven" "https://github.com/skotchpine/asdf-maven"
 asdf install maven 3.3.9
 asdf global maven 3.3.9
+
+asdf_plugin_update "racket" "https://github.com/vic/asdf-racket"
+asdf install racket 6.12
+asdf global racket 6.12
