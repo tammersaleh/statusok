@@ -2,10 +2,21 @@
   "articles": [
     {
       "author_ids": [
+        "Dan Croak"
+      ],
+      "id": "process-model",
+      "published": "2018-04-05",
+      "tags": [
+        "infra",
+        "unix"
+      ]
+    },
+    {
+      "author_ids": [
         "croaky"
       ],
-      "published": "2014-08-08",
       "id": "dns-cdn-origin",
+      "published": "2014-08-08",
       "tags": [
         "infra",
         "ruby"
@@ -16,8 +27,8 @@
       "author_ids": [
         "croaky"
       ],
-      "published": "2010-01-20",
       "id": "configuration-block-ruby",
+      "published": "2010-01-20",
       "redirects": [
         "/configuration-block-pattern-with-ruby"
       ],
@@ -30,8 +41,8 @@
       "author_ids": [
         "croaky"
       ],
-      "published": "2013-11-29",
       "id": "cache-api-requests",
+      "published": "2013-11-29",
       "tags": [
         "ruby"
       ],
@@ -135,8 +146,8 @@
         "croaky"
       ],
       "canonical": "https://robots.thoughtbot.com/how-to-reduce-a-large-heroku-compiled-slug-size",
-      "published": "2016-06-13",
       "id": "reduce-a-large-heroku-compiled-slug-size",
+      "published": "2016-06-13",
       "tags": [
         "infra"
       ]
@@ -237,8 +248,8 @@
         "croaky"
       ],
       "canonical": "https://robots.thoughtbot.com/laptop-setup-for-an-awesome-development-environment",
-      "published": "2014-06-18",
       "id": "laptop-setup-script",
+      "published": "2014-06-18",
       "tags": [
         "setup",
         "unix"
@@ -274,8 +285,8 @@
         "croaky"
       ],
       "canonical": "https://robots.thoughtbot.com/faster-grepping-in-vim",
-      "published": "2013-11-27",
       "id": "fast-search-vim",
+      "published": "2013-11-27",
       "redirects": [
         "/search-faster-in-vim",
         "/fast-search-with-vim"
@@ -312,8 +323,8 @@
         "croaky"
       ],
       "canonical": "https://robots.thoughtbot.com/running-specs-from-vim",
-      "published": "2013-08-05",
       "id": "run-tests-vim",
+      "published": "2013-08-05",
       "redirects": [
         "/run-specs-with-vim"
       ],
