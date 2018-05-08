@@ -4,9 +4,10 @@ import "os/user"
 
 // Author is an author of articles
 type Author struct {
-	ID   string `json:"id"`
-	Name string `json:"name"`
-	URL  string `json:"url"`
+	ID   string            `json:"id"`
+	Name string            `json:"name"`
+	URLs map[string]string `json:"urls"`
+	Blog *Blog             `json:"-"`
 }
 
 // NewAuthor constructs a new author
@@ -15,7 +16,7 @@ func NewAuthor() Author {
 	return Author{
 		ID:   id,
 		Name: name,
-		URL:  "https://author.example.com",
+		URLs: map[string]string{"Twitter": "https://twitter.com/example"},
 	}
 }
 
@@ -29,4 +30,18 @@ func NewAuthorIDs() (id, name string) {
 		name = u.Name
 	}
 	return u.Username, name
+}
+
+// Articles written by the author
+func (a *Author) Articles() []Article {
+	var articles []Article
+	for _, article := range a.Blog.Articles {
+		for _, author := range article.AuthorIDs {
+			if a.ID == author {
+				articles = append(articles, article)
+			}
+		}
+	}
+
+	return articles
 }

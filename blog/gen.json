@@ -559,12 +559,17 @@
     {
       "id": "croaky",
       "name": "Dan Croak",
-      "url": "https://twitter.com/croaky"
+      "urls": {
+        "GitHub": "https://github.com/croaky",
+        "Twitter": "https://twitter.com/croaky"
+      }
     },
     {
       "id": "frechg",
       "name": "Galen Frechette",
-      "url": "http://galen.io"
+      "urls": {
+        "Homepage": "http://galen.io"
+      }
     }
   ],
   "name": "Status OK",

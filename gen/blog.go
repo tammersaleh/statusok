@@ -101,6 +101,11 @@ func (blog *Blog) handler(w http.ResponseWriter, r *http.Request) {
 		_, name := path.Split(r.URL.Path)
 		tag := Tag{Name: name, Blog: blog}
 		must(tagPage.Execute(w, &tag))
+	case strings.HasPrefix(r.URL.Path, "/authors/"):
+		_, id := path.Split(r.URL.Path)
+		author := blog.findAuthor(id)
+		author.Blog = blog
+		must(authorPage.Execute(w, &author))
 	case strings.HasPrefix(r.URL.Path, "/images/"):
 		_, filename := path.Split(r.URL.Path)
 		image := blog.RootDir + "/public/images/" + filename
